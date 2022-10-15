@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Dulce.Heladeria.DataAccess\Dulce.Heladeria.DataAccess.csproj" />
     <ProjectReference Include="..\Dulce.Heladeria.Models\Dulce.Heladeria.Models.csproj" />
-    <ProjectReference Include="..\Dulce.Heladeria.Repositories\Dulce.Heladeria.Repositories.csproj" />
   </ItemGroup>
 
 </Project>
