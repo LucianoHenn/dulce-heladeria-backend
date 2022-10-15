@@ -9,6 +9,6 @@ namespace Dulce.Heladeria.Models.Entities
     {
         [Key]
         public int Id { get; set; }
-        public DateTime DeletionDate { get; set; }
+        public DateTime? DeletionDate { get; set; }
     }
 }

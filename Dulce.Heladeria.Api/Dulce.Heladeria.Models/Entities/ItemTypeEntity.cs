@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Dulce.Heladeria.Models.Entities
 {
-    public class ItemTypeEntity
+    public class ItemTypeEntity: BaseEntity
     {
-        public int Id { get; set; }
+        [Required]
         public string Description { get; set; }
     }
 }
