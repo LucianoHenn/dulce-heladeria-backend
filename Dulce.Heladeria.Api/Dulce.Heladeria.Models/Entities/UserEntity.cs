@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Dulce.Heladeria.Models.Entities
 {
-    internal class UserEntity : BaseEntity
+    public class UserEntity : BaseEntity
     {
         [Required(ErrorMessage = "Name is required")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "First Name should be minimum 3 characters and a maximum of 100 characters")]
