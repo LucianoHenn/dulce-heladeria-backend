@@ -32,7 +32,7 @@ namespace Dulce.Heladeria.Api.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ModelState);
             }
 
-            return NoContent();
+            return Ok(result);
         }
     }
 }
