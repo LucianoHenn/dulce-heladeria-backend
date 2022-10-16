@@ -7,6 +7,8 @@ namespace Dulce.Heladeria.Models.Enums
 {
     public enum MeasuringType
     {
-
+        unit= 1,
+        liter,
+        package
     }
 }

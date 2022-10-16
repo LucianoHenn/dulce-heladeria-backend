@@ -1,5 +1,11 @@
 using Dulce.Heladeria.Api.Helpers;
 using Dulce.Heladeria.DataAccess.Data;
+using Dulce.Heladeria.Models.UnitOfWork;
+using Dulce.Heladeria.Repositories.IRepositories;
+using Dulce.Heladeria.Repositories.Repositories;
+using Dulce.Heladeria.Services.IManager;
+using Dulce.Heladeria.Services.Manager;
+using Dulce.Heladeria.Services.Mappings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +39,14 @@ namespace Dulce.Heladeria.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IUnitOfWork, BaseUnitOfWork>();
+            services.AddScoped<IItemRepository,ItemRepository>();
+            services.AddScoped <IItemManager,ItemManager> ();
+
+            services.AddAutoMapper(typeof(EntityToDtoProfile));
+            services.AddAutoMapper(typeof(DtoToEntityProfile));
+
             services.AddSwaggerGen(options => 
             {
                 options.SwaggerDoc("DulceHeladeriaApi", new Microsoft.OpenApi.Models.OpenApiInfo()
