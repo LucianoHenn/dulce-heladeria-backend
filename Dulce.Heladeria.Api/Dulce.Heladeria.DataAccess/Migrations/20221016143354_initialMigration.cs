@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Dulce.Heladeria.DataAccess.Migrations
 {
-    public partial class InitialMigrationItemsWereAdded : Migration
+    public partial class initialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -29,7 +29,8 @@ namespace Dulce.Heladeria.DataAccess.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     DeletionDate = table.Column<DateTime>(nullable: true),
-                    Description = table.Column<string>(nullable: false),
+                    Name = table.Column<string>(nullable: false),
+                    Description = table.Column<string>(nullable: true),
                     ItemTypeId = table.Column<int>(nullable: false),
                     MeasuringType = table.Column<int>(nullable: false)
                 },

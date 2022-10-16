@@ -27,7 +27,6 @@ namespace Dulce.Heladeria.DataAccess.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<int>("ItemTypeId")
@@ -35,6 +34,10 @@ namespace Dulce.Heladeria.DataAccess.Migrations
 
                     b.Property<int>("MeasuringType")
                         .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
 
