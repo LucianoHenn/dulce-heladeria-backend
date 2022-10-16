@@ -1,4 +1,5 @@
-﻿using Dulce.Heladeria.Models.Enums;
+﻿using Dulce.Heladeria.Models.BaseEntities;
+using Dulce.Heladeria.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

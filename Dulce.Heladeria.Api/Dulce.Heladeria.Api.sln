@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dulce.Heladeria.Services", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dulce.Heladeria.DataAccess", "Dulce.Heladeria.DataAccess\Dulce.Heladeria.DataAccess.csproj", "{E3722F69-2A55-434B-9C33-05E142FF4B4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dulce.Heladeria.Repositories", "Dulce.Heladeria.Repositories\Dulce.Heladeria.Repositories.csproj", "{5D511B68-3B2C-488F-AE0E-AB8D97610942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dulce.Heladeria.Repositories", "Dulce.Heladeria.Repositories\Dulce.Heladeria.Repositories.csproj", "{5D511B68-3B2C-488F-AE0E-AB8D97610942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dulce.Heladeria.Models", "Dulce.Heladeria.Models\Dulce.Heladeria.Models.csproj", "{2F256B09-ED91-4173-BFC5-388F5AF89516}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dulce.Heladeria.Models", "Dulce.Heladeria.Models\Dulce.Heladeria.Models.csproj", "{2F256B09-ED91-4173-BFC5-388F5AF89516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
