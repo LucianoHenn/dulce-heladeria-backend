@@ -89,7 +89,7 @@ namespace Dulce.Heladeria.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationDbContext dataContext)
         {
             if (env.IsDevelopment())
             {
@@ -112,6 +112,8 @@ namespace Dulce.Heladeria.Api
                     });
                 });
             }
+
+            dataContext.Database.Migrate();
 
             app.UseHttpsRedirection();
 
